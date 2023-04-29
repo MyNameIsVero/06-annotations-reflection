@@ -39,6 +39,7 @@ public class App {
 		Joke j = resp.body();
 
 		System.out.println(j.toString());
+		System.out.println("Done");
 	}
 
 }

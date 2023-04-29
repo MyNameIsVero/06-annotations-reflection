@@ -17,7 +17,7 @@ public final class Joke {
 	private String identifier;
 	@SerializedName("value")
 	private String content;
-	@SerializedName("cathegories")
+	@SerializedName("categories")
 	private List<String> rubrics;
 
 	public Joke() {

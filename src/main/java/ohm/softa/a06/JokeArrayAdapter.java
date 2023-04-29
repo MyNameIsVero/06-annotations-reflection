@@ -1,6 +1,7 @@
 package ohm.softa.a06;
 
 import com.google.gson.Gson;
+import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import ohm.softa.a06.model.Joke;
@@ -13,9 +14,9 @@ public class JokeArrayAdapter extends TypeAdapter<Joke[]> {
 	public JokeArrayAdapter() {
 		gson = new Gson();
 	}
+
 	@Override
 	public Joke[] read(JsonReader reader) throws IOException {
-
 		Joke[] result = null;
 		reader.beginObject();
 		while (reader.hasNext()) {
