@@ -26,6 +26,8 @@ public final class Joke {
 		return content;
 	}
 
+	public List<String> getRubrics() {return rubrics;}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -57,5 +59,19 @@ public final class Joke {
 			.append("content", content)
 			.append("rubrics", rubrics)
 			.toString();
+	}
+
+	public void setIdentifier(String identifier) {
+		this.identifier = identifier;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public void setRubrics(String[] rubricsArray){
+		for (String s:
+			  rubricsArray) {rubrics.add(s);
+		}
 	}
 }

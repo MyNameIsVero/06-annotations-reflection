@@ -181,3 +181,12 @@ On Windows, you can use the PowerShell to accomplish the same like so:
 (The part `| ConvertFrom-Json | ConvertTo-Json` is only necessary for formatting.)
 
 _Remark: to execute this command you have to remove the newlines!_
+
+
+Notes: 
+- api als interface ansprechen 
+- Call bei Retrofit ist netzwerkrequest aber muss noch getriggert werden
+- Retrofit: das vom server zurückkomt muss zu java objekt gemacht werden --> toolkit gson
+- gson: tojson und fromjson; hier interessant: Deserialisiertung (aus text json machen)
+
+- alle jokes bekommen: adapter oder array
